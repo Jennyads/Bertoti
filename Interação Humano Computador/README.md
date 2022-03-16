@@ -4,13 +4,13 @@
 
 <h4>Avaliação heurística de acordo com WCAG/W3C</h4>
 
-Diretriz 1.1 - Alternativas de Texto
+<h3>Diretriz 1.1 - Alternativas de Texto</h3>
 
 * Não fornece alternativas de texto para qualquer conteúdo que não seja de texto.
 
 ![alt text](https://github.com/Jennyads/Bertoti/blob/main/Intera%C3%A7%C3%A3o%20Humano%20Computador/Imagens/diretriz_1.1_alternativas_de_texto.JPG)
 
-Diretriz 1.2 - Mídia baseada em tempo
+<h3>Diretriz 1.2 - Mídia baseada em tempo</h3>
 
 * Uso de formatos diversos, como vídeo e sua respectiva transcrição. 
 
@@ -20,7 +20,7 @@ Diretriz 1.2 - Mídia baseada em tempo
 
 ![alt text](https://github.com/Jennyads/Bertoti/blob/main/Intera%C3%A7%C3%A3o%20Humano%20Computador/Imagens/diretriz_1.2_midia_baseada_em_tempo_contra.JPG)
 
-Diretriz 1.3 - Adaptável
+<h3>Diretriz 1.3 - Adaptável</h3>
 
 * Plataforma Udemy adaptável para dispotivo remotos (aplicativo) e site. 
 
@@ -32,7 +32,7 @@ Diretriz 1.3 - Adaptável
 
 ![alt text](https://github.com/Jennyads/Bertoti/blob/main/Intera%C3%A7%C3%A3o%20Humano%20Computador/Imagens/diretriz_1.3_adaptavel_app.jpg)
 
-Diretriz 1.4 - Distinguível
+<h3>Diretriz 1.4 - Distinguível</h3>
 
  * Contraste negativo de cores: 
  
