@@ -6,7 +6,7 @@
 
 <h3>Diretriz 1.1 - Alternativas de Texto</h3>
 
-* Não fornece alternativas de texto para qualquer conteúdo que não seja de texto.
+* Não fornece alternativas de texto para qualquer conteúdo que não seja de texto. Nesse exemplo não contém o alt para ler a imagem. 
 
 ![alt text](https://github.com/Jennyads/Bertoti/blob/main/Intera%C3%A7%C3%A3o%20Humano%20Computador/Imagens/diretriz_1.1_alternativas_de_texto.JPG)
 
