@@ -15,12 +15,16 @@
 
 ![alt text](https://github.com/Jennyads/Bertoti/blob/main/Engenharia%20de%20Software%20I/Projeto%20de%20Sistemas%20-%20Diagrama%20de%20Classes/Projeto%20de%20Sistemas%20-%20Diagrama%20de%20Classes.png)
 
-A classe conhece atributos e métodos
+<h3>Desenvolvimento:</h3>
 
-public List<Pessoa> buscarPessoaNome(String nome) {
-  list <Pessoa> encontrado= nem LinhedList<Pessoa>();
-  for (Pessoa pessoa: pessoas) {
-      if (pessoa.getNome().equals(nome) encontrado.add(pessoa);
-  }
-  return encontrado;
-  }
+*Classe Plataforma de Ensino:
+
+![alt text](https://github.com/Jennyads/Bertoti/blob/main/Engenharia%20de%20Software%20I/Projeto%20de%20Sistemas%20-%20Diagrama%20de%20Classes/Imagens/diagrama_plataforma_ensino.JPG)
+
+* Classe Pessoa:
+
+![alt text](https://github.com/Jennyads/Bertoti/blob/main/Engenharia%20de%20Software%20I/Projeto%20de%20Sistemas%20-%20Diagrama%20de%20Classes/Imagens/diagrama_pessoa.JPG)
+
+* Classe Turma: 
+
+![alt text](https://github.com/Jennyads/Bertoti/blob/main/Engenharia%20de%20Software%20I/Projeto%20de%20Sistemas%20-%20Diagrama%20de%20Classes/Imagens/diagrama_turma.JPG)
