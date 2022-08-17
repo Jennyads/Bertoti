@@ -1,6 +1,6 @@
 <h2>IHC</h2>
 
-<h3>Aula do dia 09/03/2022</h3>
+<h3>Aula do dia 17/08/2022</h3>
 
 <h4>Avaliação heurística de acordo com WCAG/W3C</h4>
 
