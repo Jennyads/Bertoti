@@ -3,45 +3,45 @@ import Swing.SwingBehavior;
 
 public class Dog {
 
-    private final String nome;
-    private DogType raca;
+    private final String name;
+    private DogType race;
 
     private SwingBehavior swingBehavior;
     private BarkBehavior barkBehavior;
 
-    public Dog(String nome, DogType raca, BarkBehavior barkBehavior, SwingBehavior swingBehavior) {
-        this.nome = nome;
-        this.raca = raca;
+    public Dog(String name, DogType race, BarkBehavior barkBehavior, SwingBehavior swingBehavior) {
+        this.name = name;
+        this.race = race;
         this.barkBehavior = barkBehavior;
         this.swingBehavior = swingBehavior;
     }
 
-    public DogType getRaca() {
-        return raca;
+    public DogType getRace() {
+        return race;
     }
 
-    public String getNome() {
-        return nome;
+    public String getName() {
+        return name;
     }
 
-    public int latir(){
-        int potenciaLatido = barkBehavior.latir();
+    public int bark(){
+        int barkPower = barkBehavior.bark();
 
-        for (int i = 0; i < potenciaLatido; i++){
+        for (int i = 0; i < barkPower; i++){
             System.out.print("au");
         }
 
-        return potenciaLatido;
+        return barkPower;
     }
-    public int nadar(){
-        int velocidadeNado = swingBehavior.swing();
-        System.out.println(nome+" nadou na velocidade de "+velocidadeNado+" kh/h");
-        return velocidadeNado;
+    public int swing(){
+        int swimmingSpeed = swingBehavior.swing();
+        System.out.println(name+" nadou na velocidade de "+swimmingSpeed+" kh/h");
+        return swimmingSpeed;
 
     }
 
     @Override
     public String toString() {
-        return "Competidor "+nome+" da raça "+raca.getRaca();
+        return "Competidor "+name+" da raça "+race.getRace();
     }
 }

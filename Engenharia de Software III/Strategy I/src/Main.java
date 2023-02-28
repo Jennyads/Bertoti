@@ -19,48 +19,50 @@ public class Main {
         Dog beagle = new Dog("Bilbo",  DogType.BEAGLE, new BarkMedium(), new SwingSlow());
 
 
-        List<Dog> caesLista = new ArrayList<>(
+        List<Dog> listDogs = new ArrayList<>(
                 Arrays.asList(labrador, beagle)
         );
 
 
         System.out.println("* COMPETIÇÃO DE MAIOR LATIDO:");
 
-        int maiorLatido = 0;
-        Dog campeaoLatido = null;
+        int biggestBark = 0;
+        Dog barkChampion = null;
 
-        for (Dog dog: caesLista){
+        for (Dog dog: listDogs){
             System.out.println("\n"+dog);
-            System.out.println(dog.getNome() + " vai latir...");
-            int potenciaLatido = dog.latir();
+            System.out.println(dog.getName() + " vai latir...");
+            int barkPower = dog.bark();
             System.out.println("\n-----------------------------");
 
-            if(potenciaLatido > maiorLatido){
-                maiorLatido = potenciaLatido;
-                campeaoLatido = dog;
+            if(barkPower > biggestBark){
+                biggestBark = barkPower;
+                barkChampion = dog;
             }
         }
 
-        System.out.println("CAMPEÃO DO MAIOR LATIDO É: "+campeaoLatido.getNome());
+        System.out.println("CAMPEÃO DO MAIOR LATIDO É: "+barkChampion.getName());
 
         System.out.println("\n-----------------------------");
-        System.out.println("\n* COMPETIÇÃO DE NADO MAIS RÁPIDO:");
-        int nadoMaisRapido = 0;
-        Dog campeaoNado = null;
 
-        for (Dog dog: caesLista){
+
+        System.out.println("\n* COMPETIÇÃO DE NADO MAIS RÁPIDO:");
+        int swimFaster = 0;
+        Dog swimmingChampion = null;
+
+        for (Dog dog: listDogs){
             System.out.println("\n"+dog);
-            System.out.println(dog.getNome() + " vai nadar...");
-            int velocidadeNado = dog.nadar();
+            System.out.println(dog.getName() + " vai nadar...");
+            int swimmingSpeed = dog.swing();
             System.out.println("\n-----------------------------");
 
-            if(velocidadeNado > nadoMaisRapido){
-                nadoMaisRapido = velocidadeNado;
-                campeaoNado = dog;
+            if(swimmingSpeed > swimFaster){
+                swimFaster = swimmingSpeed;
+                swimmingChampion = dog;
             }
 
         }
-        System.out.println("CAMPEÃO DO NADO MAIS RÁPIDO É: "+campeaoNado.getNome());
+        System.out.println("CAMPEÃO DO NADO MAIS RÁPIDO É: "+swimmingChampion.getName());
 
 
 

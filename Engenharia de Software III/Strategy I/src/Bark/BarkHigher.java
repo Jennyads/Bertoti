@@ -4,7 +4,7 @@ public class BarkHigher implements BarkBehavior{
 
 
     @Override
-    public int latir() {
+    public int bark() {
         return 10;
     }
 }

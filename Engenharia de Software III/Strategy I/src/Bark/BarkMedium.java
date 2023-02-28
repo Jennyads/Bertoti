@@ -3,7 +3,7 @@ package Bark;
 public class BarkMedium implements BarkBehavior{
 
     @Override
-    public int latir() {
+    public int bark() {
         return 6;
     }
 
