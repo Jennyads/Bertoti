@@ -49,43 +49,41 @@ Dog-->CharacteristicDog
 
 interface SwingBehavior {
 
-    int swing()
+    double swing(int age, double weight)
 
+}
+class SwingFast implements SwingBehavior{
+
+    +double swing(int age, double weight)
+}
+class SwingNormal implements SwingBehavior{
+   
+    +double swing(int age, double weight) 
+}
+class SwingSlow implements SwingBehavior{
+
+    +double swing(int age, double weight)
 }
 Dog*-->SwingBehavior
 
 interface BarkBehavior {
 
-   int bark()
+    double bark(int age, double weight)
 }
 Dog*-->BarkBehavior
 
 class BarkHigher implements BarkBehavior{  
-    +int bark() 
+    +double bark(int age, double weight) 
 }
 class BarkLower implements BarkBehavior{
-
-    
-    +int bark() 
+    +double bark(int age, double weight)
 }
 
 class BarkMedium implements BarkBehavior{
 
-    +int bark()
+    +double bark(int age, double weight)
 
 }
-class SwingFast implements SwingBehavior{
 
-    
-    +int swing()
-}
-class SwingNormal implements SwingBehavior{
-   
-    +int swing() 
-}
-class SwingSlow implements SwingBehavior{
-
-    +int swing() 
-}
 
 @enduml
