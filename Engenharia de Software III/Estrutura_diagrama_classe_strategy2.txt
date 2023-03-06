@@ -1,0 +1,91 @@
+@startuml Dog
+
+class Dog {
+    -String name;
+    -DogType race;
+    -int age;
+    -double weight;
+    -SwingBehavior swingBehavior;
+    -BarkBehavior barkBehavior;
+    
+    +String getName() 
+    +double bark()
+    +double swing()
+    +String toString() 
+}
+
+enum DogType {
+
+    LABRADOR("Labrador"),
+    BEAGLE("Beagle"),
+    BORDER_COLLIE("Border Collie");
+
+    -String race;
+
+    -DogType(String race)
+
+    +String getRace()
+}
+
+Dog-->DogType
+
+class CharacteristicDog {
+
+    -SwingBehavior swingBehavior;
+    -BarkBehavior barkBehavior;
+
+
+    +void setBarkBehavior(BarkBehavior barkBehavior)
+
+    +setSwingBehavior(SwingBehavior swingBehavior)
+
+    +BarkBehavior getBarkBehavior() 
+
+    +SwingBehavior getSwingBehavior() 
+
+}
+
+Dog-->CharacteristicDog
+
+interface SwingBehavior {
+
+    int swing()
+
+}
+Dog*-->SwingBehavior
+
+interface BarkBehavior {
+
+   int bark()
+}
+Dog*-->BarkBehavior
+
+class BarkHigher implements BarkBehavior{  
+    +int bark() 
+}
+class BarkLower implements BarkBehavior{
+
+    
+    +int bark() 
+}
+
+class BarkMedium implements BarkBehavior{
+
+    +int bark()
+
+}
+class SwingFast implements SwingBehavior{
+
+    
+    +int swing()
+}
+class SwingNormal implements SwingBehavior{
+   
+    +int swing() 
+}
+class SwingSlow implements SwingBehavior{
+
+    +int swing() 
+}
+
+@enduml

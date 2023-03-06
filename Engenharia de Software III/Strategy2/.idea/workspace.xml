@@ -4,7 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1f6c86e-3594-463c-a377-f3017db73c6c" name="Changes" comment="" />
+    <list default="true" id="d1f6c86e-3594-463c-a377-f3017db73c6c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../Strategy I/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Strategy I/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Strategy I/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Strategy I/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Strategy I/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Strategy I/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Strategy I/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Strategy I/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Strategy I/Strategy1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Strategy I/src/Bark/BarkBehavior.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Strategy I/src/Bark/BarkHigher.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Strategy I/src/Bark/BarkLower.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Strategy I/src/Bark/BarkMedium.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Strategy I/src/Dog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Strategy I/src/DogType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Strategy I/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Strategy I/src/Swing/SwingBehavior.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Strategy I/src/Swing/SwingFast.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Strategy I/src/Swing/SwingNormal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Strategy I/src/Swing/SwingSlow.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
