@@ -1,11 +1,12 @@
 public enum PhotoFormat {
+
     PNG("PNG"),
     JPEG("JPEG"),
-    BMP("BPM");
+    BMP("BMP");
 
     private final String photoFormat;
 
-    private PhotoFormat(String photoFormat){
+    PhotoFormat(String photoFormat){
         this.photoFormat = photoFormat;
     }
 

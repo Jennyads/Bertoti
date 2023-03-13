@@ -1,4 +1,3 @@
 public interface Observer {
-
-    Photo notification();
+    void update(Photo photo);
 }
