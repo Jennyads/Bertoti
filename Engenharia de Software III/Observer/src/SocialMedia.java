@@ -3,26 +3,26 @@ import java.util.List;
 
 public class SocialMedia  implements Subject{
 
-    private List<Observer> redesSociais = new ArrayList<>();
+    private List<Observer> socialMedias = new ArrayList<>();
 
     @Override
     public void register(Observer o) {
-        redesSociais.add(o);
+        socialMedias.add(o);
     }
 
     @Override
     public void remove(Observer o) {
-        int index = redesSociais.indexOf(o);
+        int index = socialMedias.indexOf(o);
 
         if(index > 0){
-            redesSociais.remove(index);
+            socialMedias.remove(index);
         }
     }
 
     @Override
     public void notify(Photo photo) {
         System.out.println("---------------------------------");
-        for(Observer o: redesSociais){
+        for(Observer o: socialMedias){
             o.update(photo);
         }
     }
