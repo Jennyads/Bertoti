@@ -1,0 +1,138 @@
+@startuml SocilMedia
+
+class SocialMedia  implements Subject{
+
+    -List<Observer> socialMedias = new ArrayList<>();
+
+    +void register(Observer o)
+
+    +void remove(Observer o)
+
+    +void notify(Photo photo) 
+}
+
+interface Subject {
+
+    void register( Observer o);
+
+    void remove(Observer o);
+
+    void notify(Photo photo);
+
+}
+class Photo {
+
+    -String legend;
+    -Location location;
+    -double size;
+    -PhotoFormat photoFormat;    private Photo notification;
+
+    +Photo(String legend, Location location, double size, PhotoFormat photoFormat)
+
+    +String getLegend() 
+
+    +void setLegend(String legend) 
+
+    +Location getLocation() 
+
+    +void setLocation(Location location) 
+
+    +double getSize() 
+
+    +void setSize(double size) 
+
+    +PhotoFormat getPhotoFormat()
+    
+    +void setPhotoFormat(PhotoFormat photoFormat) 
+
+    +Photo getNotification() 
+
+    +void setNotification(Photo notification) 
+
+    +String toString() 
+}
+enum PhotoFormat {
+
+    PNG("PNG"),
+    JPEG("JPEG"),
+    BMP("BMP");
+
+    -final String photoFormat;
+
+    PhotoFormat(String photoFormat)
+
+    +String getPhotoFormat() 
+
+}
+
+Photo-->PhotoFormat
+Subject..>Photo
+Subject..>Observer
+Observer..>Photo
+
+
+enum Location {
+
+    SP("São Paulo"),
+    RJ("Rio de Janeiro"),
+    AC("Acre"),
+    AL("Alagoas"),
+    AP("Amapá"),
+    AM("Amazonas"),
+    BA("Bahia"),
+    CE("Ceará"),
+    DG("Distrito Federal"),
+    ES("Espírito Santo"),
+    GO("Goias"),
+    MS("Mato Grosso do Sul"),
+    MT("Mato Grosso"),
+    PR("Paraná"),
+    PA("Pará"),
+    PB("Paraíba"),
+    PE("Pernambuco"),
+    RN("Rio Grande do Norte"),
+    RS("Rio Grande do Sul"),
+    SC("Santa Catarina"),
+    RR("Roraima"),
+    RO("Rondônia"),
+    TO("Tocantins"),
+    SE("Sergipe"),
+    MG("Minas Gerais"),
+    MA("Maranhão"),
+    PI("Piauí");
+
+
+
+    -final String location;
+
+    +Location(String location)
+
+    +String getLocation()
+}
+Photo-->Location
+
++interface Observer {
+    void update(Photo photo);
+}
+
+class Facebook implements Observer{
+
+   
+    +void update(Photo photo) 
+}
+class Instagram implements Observer{
+  
+    +void update(Photo photo) 
+}
+class TikTok implements Observer{
+
+    +void update(Photo photo) 
+}
+
+class Twitter implements Observer{
+    +void update(Photo photo) 
+}
+
+
+
+@enduml
