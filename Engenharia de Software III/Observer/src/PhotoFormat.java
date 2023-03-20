@@ -14,4 +14,5 @@ public enum PhotoFormat {
         return photoFormat;
     }
 
+
 }

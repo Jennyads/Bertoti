@@ -10,6 +10,7 @@ public class Main {
         socialMedia.register(new Facebook());
         socialMedia.register(new Twitter());
         socialMedia.register(new Instagram());
+        socialMedia.register(new TikTok());
 
         TikTok tikTok = new TikTok();
 

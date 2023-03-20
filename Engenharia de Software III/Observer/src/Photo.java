@@ -3,12 +3,16 @@ public class Photo {
     private String legend;
     private Location location;
     private double size;
-    private PhotoFormat photoFormat;    private Photo notification;
+    private PhotoFormat photoFormat;
+    private Photo notification;
 
     public Photo(String legend, Location location, double size, PhotoFormat photoFormat){
         this.legend = legend;
         this.location = location;
         this.size = size;
+        this.photoFormat = photoFormat;
+    }
+    public void updatePhotoFormat(PhotoFormat photoFormat){
         this.photoFormat = photoFormat;
     }
 
