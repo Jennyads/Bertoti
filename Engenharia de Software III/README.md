@@ -1,5 +1,5 @@
 
-<h3>Neste repositório foi desenvolvido projetos para representar tipos de design paterns, como o strategy, observer, composite e singleton.</h3>
+<h3>Neste repositório foi desenvolvido projetos para representar modelos de design paterns, como o strategy, observer, composite e singleton.</h3>
 
 Padrões de projeto são soluções típicas para problemas comuns no projeto de software. Eles são como projetos pré-fabricados que você pode personalizar para resolver um problema de design recorrente em seu código.O padrão não é um pedaço específico de código, mas um conceito geral para resolver um problema particular. Você pode seguir os detalhes do padrão e implementar uma solução que se adapte às realidades do próprio programa.
 
