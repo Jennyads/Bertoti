@@ -2,7 +2,7 @@
 
 class SocialMedia  implements Subject{
 
-    -List<Observer> socialMedias = new ArrayList<>();
+    -List<Observer> socialMedias 
 
     +void register(Observer o)
 

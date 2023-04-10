@@ -1,0 +1,44 @@
+@startuml SocilMedia
+
+CostumeComponent-->Cloth
+interface CostumeComponent {
+        void determinesCostume();
+        void definesFabric(Cloth cloth);
+
+}
+
+class GeneralGroups implements CostumeComponent {
+
+    -ArrayList<CostumeComponent> costumeList 
+
+    +void determinesCostume()
+    
+    +void definesFabric(Cloth cloth)
+
+    +void add(CostumeComponent costume) 
+
+    +void remove(CostumeComponent costume) 
+    +void list()
+
+}
+enum Cloth {
+
+    COTTON("Cotton"),
+    POLYESTER("Polyester"),
+    LEATHER("Leather"),
+    SATIN("Satin");
+
+    -String description;
+
+    Cloth(String description)
+
+    +String getDescription() 
+}
+class FormalAttire implements CostumeComponent{
+    +void determinesCostume() 
+    +void definesFabric(Cloth cloth) 
+}
+
+
+GeneralGroups*-->CostumeComponent
+@enduml
