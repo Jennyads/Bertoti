@@ -1,6 +1,6 @@
 @startuml SocilMedia
 
-class SocialMedia  implements Subject{
+class SocialMedia implements Subject{
 
     -List<Observer> socialMedias 
 

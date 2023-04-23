@@ -1,0 +1,17 @@
+@startuml Facade
+
+class DatabaseConnection {
+    -Connection connection;
+    -String url;
+    -String username;
+    -String password;
+
+    +DatabaseConnection(String url, String username, String password) 
+    
+    +Connection getConnection()
+
+    +void closeConnection() 
+}
+
+
+@enduml
