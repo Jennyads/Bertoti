@@ -4,31 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1f6c86e-3594-463c-a377-f3017db73c6c" name="Changes" comment="" />
+    <list default="true" id="cba5ca59-3657-45dc-9b55-209be9bf5c3e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/Composite/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Composite/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Composite/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Composite/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Enum" />
-        <option value="Interface" />
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2MK6592wTaBdL4UTDxW4FRRPXGt" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectId" id="2OHhYklQ0wuoW3iB3h3MvzXqPGh" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -37,37 +29,17 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/workspace/Bertoti/Engenharia de Software III/Strategy1"
+    "last_opened_file_path": "C:/workspace/Bertoti/Engenharia de Software III/Singleton"
   }
 }]]></component>
-  <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="" />
-    </key>
-  </component>
-  <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="Strategy1" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.Main" />
-      </list>
-    </recent_temporary>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="d1f6c86e-3594-463c-a377-f3017db73c6c" name="Changes" comment="" />
-      <created>1677503740657</created>
+      <changelist id="cba5ca59-3657-45dc-9b55-209be9bf5c3e" name="Changes" comment="" />
+      <created>1681223464979</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1677503740657</updated>
+      <updated>1681223464979</updated>
     </task>
     <servers />
   </component>
