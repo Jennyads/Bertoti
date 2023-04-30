@@ -15,3 +15,25 @@ A motivação explica ainda mais o problema e a solução que o padrão torna po
 A estrutura das classes mostra cada parte do padrão e como elas estão relacionadas.
 O exemplo de código em uma das linguagens de programação populares facilita a compreensão da ideia por trás do padrão.
 Alguns catálogos de padrões listam outros detalhes úteis, como aplicabilidade do padrão, etapas de implementação e relações com outros padrões.
+
+<h3>MVC - Model, View, Controller</h3>
+
+Model: coração da aplicação, terá as regras de negócios, entidades e camada de acesso a dados.
+
+View: renderizar a respostas, ou seja, a página com resposta à requisição.
+
+Controller: controle do fluxo da aplicação, faz o intermédio de todo fluxo entre model e view (pede as informações para o model).
+
+```
+Browser -> web server -> aplicação -> controller 
+
+1 cenário sem acessar dados:
+
+browser (requisição) -> controller(encaminha) -> view (renderiza a resposta) -> browser
+
+2 cenário com acesso de dados: 
+
+browser (requisição) -> controller(instancia) -> model (acessa e liga com banco de dados) -> controller (encaminha) -> view (renderiza a resposta) -> browser 
+```
+Requisição é recebida pelo controller
+Resposta é gerada/enviada pelo view
