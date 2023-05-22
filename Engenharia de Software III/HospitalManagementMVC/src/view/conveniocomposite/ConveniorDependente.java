@@ -1,4 +1,4 @@
-package model.conveniocomposite;
+package view.conveniocomposite;
 
 
 public class ConveniorDependente extends Convenio {

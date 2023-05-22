@@ -1,4 +1,6 @@
-package model;
+package model.facade;
+
+import model.domain.Patient;
 
 public class LabsFacade {
     private Xray labXray = new Xray();

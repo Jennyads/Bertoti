@@ -1,6 +1,7 @@
-package model;
+package model.domain;
 
-import model.conveniocomposite.Convenio;
+import view.conveniocomposite.Convenio;
+import model.enums.SpecialitEnum;
 
 public class Patient {
 

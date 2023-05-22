@@ -1,8 +1,13 @@
-import controller.ReceptionHospitalSubject;
-import model.*;
-import model.conveniocomposite.Convenio;
-import model.conveniocomposite.ConvenioComposite;
-import model.conveniocomposite.ConveniorDependente;
+import model.subject.ReceptionHospitalSubject;
+import view.conveniocomposite.Convenio;
+import view.conveniocomposite.ConvenioComposite;
+import view.conveniocomposite.ConveniorDependente;
+import controller.strategy.ClinicalDoctor;
+import controller.strategy.Orthopedist;
+import model.domain.Patient;
+import model.enums.SpecialitEnum;
+import model.facade.Laboratory;
+import model.singleton.DatabaseSingleton;
 
 import java.util.List;
 
@@ -25,8 +30,8 @@ public class Main {
         Patient patient3 = new Patient("147.258.369-89", "Matheus Cristian", 21, SpecialitEnum.GENERAL, convenioPatient3);
         Patient patient4 = new Patient("963.852.741-85", "Stephanie Trufas", 26, SpecialitEnum.ORTHOPEDIST, convenioPatient4);
 
-        Orthopedist orthopedist = new Orthopedist("Mario José", "456");
-        ClinicalDoctor clinicalDoctor = new ClinicalDoctor("João Francisco", "789");
+        Orthopedist orthopedist = new Orthopedist("Dr. Mario José", "456");
+        ClinicalDoctor clinicalDoctor = new ClinicalDoctor("Dr. João Francisco", "789");
 
         System.out.println("======================================================");
         System.out.println("=================HOSPITAL MANAGER=====================");

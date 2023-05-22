@@ -1,10 +1,15 @@
-package model;
+package model.singleton;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import controller.*;
+import model.observer.ClinicalExamQueueObserver;
+import model.observer.ClinicalQueueObserver;
+import model.observer.ExamOrthopedistQueueObserver;
+import model.observer.OrthopedistQueueObserver;
+import model.subject.ReceptionHospitalSubject;
+import model.domain.Patient;
 
 public class DatabaseSingleton {
 

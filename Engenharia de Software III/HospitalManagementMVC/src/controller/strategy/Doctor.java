@@ -1,4 +1,6 @@
-package model;
+package controller.strategy;
+
+import model.domain.Patient;
 
 public interface Doctor {
 

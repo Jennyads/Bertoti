@@ -1,6 +1,8 @@
-package model;
+package controller.strategy;
 
-import java.util.List;
+import model.domain.Patient;
+import model.enums.SpecialitEnum;
+import model.singleton.DatabaseSingleton;
 
 public class ClinicalDoctor implements Doctor{
 

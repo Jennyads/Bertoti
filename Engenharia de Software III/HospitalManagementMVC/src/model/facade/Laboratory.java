@@ -1,4 +1,7 @@
-package model;
+package model.facade;
+
+import model.singleton.DatabaseSingleton;
+import model.domain.Patient;
 
 public class Laboratory {
 

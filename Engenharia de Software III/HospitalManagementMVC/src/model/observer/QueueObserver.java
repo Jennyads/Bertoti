@@ -1,6 +1,6 @@
-package controller;
+package model.observer;
 
-import model.Patient;
+import model.domain.Patient;
 
 public interface QueueObserver {
 

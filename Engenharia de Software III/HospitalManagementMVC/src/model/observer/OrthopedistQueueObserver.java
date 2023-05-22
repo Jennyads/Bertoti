@@ -1,8 +1,8 @@
-package controller;
+package model.observer;
 
-import model.DatabaseSingleton;
-import model.Patient;
-import model.SpecialitEnum;
+import model.singleton.DatabaseSingleton;
+import model.domain.Patient;
+import model.enums.SpecialitEnum;
 
 import java.util.ArrayList;
 import java.util.List;

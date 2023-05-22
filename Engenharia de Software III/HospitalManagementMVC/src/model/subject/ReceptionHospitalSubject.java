@@ -1,6 +1,7 @@
-package controller;
+package model.subject;
 
-import model.Patient;
+import model.observer.QueueObserver;
+import model.domain.Patient;
 
 import java.util.ArrayList;
 import java.util.List;

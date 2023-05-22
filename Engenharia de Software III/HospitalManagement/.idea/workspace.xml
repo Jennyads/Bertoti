@@ -4,7 +4,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="992d67de-d91f-48b3-bbe0-3b80362856ce" name="Changes" comment="" />
+    <list default="true" id="992d67de-d91f-48b3-bbe0-3b80362856ce" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../HospitalManagementMVC/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../HospitalManagementMVC/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HospitalManagementMVC/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../HospitalManagementMVC/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HospitalManagementMVC/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HospitalManagementMVC/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HospitalManagementMVC/src/controller/ClinicalExamQueueObserver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HospitalManagementMVC/src/controller/ClinicalQueueObserver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HospitalManagementMVC/src/controller/ExamOrthopedistQueueObserver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HospitalManagementMVC/src/controller/OrthopedistQueueObserver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HospitalManagementMVC/src/controller/QueueObserver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HospitalManagementMVC/src/controller/ReceptionHospitalSubject.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HospitalManagementMVC/src/model/BloodLab.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HospitalManagementMVC/src/model/ClinicalDoctor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HospitalManagementMVC/src/model/DatabaseSingleton.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HospitalManagementMVC/src/model/Doctor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HospitalManagementMVC/src/model/Exam.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HospitalManagementMVC/src/model/Laboratory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HospitalManagementMVC/src/model/LabsFacade.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HospitalManagementMVC/src/model/Orthopedist.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HospitalManagementMVC/src/model/Patient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HospitalManagementMVC/src/model/SpecialitEnum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HospitalManagementMVC/src/model/Tomography.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HospitalManagementMVC/src/model/Xray.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HospitalManagementMVC/src/model/conveniocomposite/Convenio.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HospitalManagementMVC/src/model/conveniocomposite/ConvenioComposite.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HospitalManagementMVC/src/model/conveniocomposite/ConveniorDependente.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -83,19 +108,14 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/model/facade/Laboratory.java</url>
+          <url>file://$PROJECT_DIR$/src/model/Laboratory.java</url>
           <line>14</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/model/observer/ClinicalQueueObserver.java</url>
+          <url>file://$PROJECT_DIR$/src/controller/ClinicalQueueObserver.java</url>
           <line>29</line>
           <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/controller/strategy/ClinicalDoctor.java</url>
-          <line>18</line>
-          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

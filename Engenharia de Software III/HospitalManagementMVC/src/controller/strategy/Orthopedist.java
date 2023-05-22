@@ -1,4 +1,8 @@
-package model;
+package controller.strategy;
+
+import model.domain.Patient;
+import model.enums.SpecialitEnum;
+import model.singleton.DatabaseSingleton;
 
 public class Orthopedist implements Doctor{
 
