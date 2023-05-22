@@ -4,15 +4,16 @@ import model.domain.Patient;
 import model.enums.SpecialitEnum;
 import model.singleton.DatabaseSingleton;
 
-public class Orthopedist implements Doctor{
-
-    private String CRM;
+public class Orthopedist implements Treatment {
     private String name;
+    private String CRM;
 
-    public Orthopedist(String name, String CRM) {
-        this.CRM = CRM;
+        public Orthopedist(String name, String CRM) {
         this.name = name;
+        this.CRM = CRM;
     }
+
+
 
     public void startAttend(){
 

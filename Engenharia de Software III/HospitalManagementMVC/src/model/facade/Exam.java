@@ -4,5 +4,5 @@ import model.domain.Patient;
 
 public interface Exam {
 
-    void doExam(Patient patient);
+    public void doExam(Patient patient);
 }

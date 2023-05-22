@@ -4,7 +4,7 @@ import model.domain.Patient;
 import model.enums.SpecialitEnum;
 import model.singleton.DatabaseSingleton;
 
-public class ClinicalDoctor implements Doctor{
+public class ClinicalDoctor implements Treatment {
 
     private String name;
     private String CRM;
