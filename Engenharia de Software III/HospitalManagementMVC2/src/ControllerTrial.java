@@ -18,7 +18,7 @@ public class ControllerTrial implements controllerInterface{
 	public void assinar(){
 		
 		model.registerObserver(view);
-		System.out.println("Assinatura realizada no servi�o meteorol�gico");
+		System.out.println("Consulta agendada no setor de agendamento!");
 		view.desabilitarBotaoAssinar();
 		view.habilitarBotaoCancelar();
 		
@@ -27,7 +27,7 @@ public class ControllerTrial implements controllerInterface{
 	        public void run() {
 	        	cancelar();
 	        }
-	      }, 40000);
+	      }, 20000);
 		
 	}
 	

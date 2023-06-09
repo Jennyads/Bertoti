@@ -35,7 +35,7 @@ public class View implements ActionListener, Observer {
 	
 	public void createView(){
 		
-		frame = new JFrame("Esta��o de agendamento");
+		frame = new JFrame("Centro de agendamento");
 		panelBotoes = new JPanel();
 		panelDados = new JPanel();
 		panelTemp = new JPanel();

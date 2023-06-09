@@ -1,7 +1,3 @@
-import java.util.ArrayList;
-import java.util.Timer;
-import java.util.TimerTask;
-
 public class Model implements Subject {
 	private static Model instance;
 	private ArrayList<Observer> observers;

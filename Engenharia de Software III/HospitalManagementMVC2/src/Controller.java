@@ -15,7 +15,7 @@ public class Controller implements controllerInterface{
 	public void assinar(){
 		
 		model.registerObserver(view);
-		System.out.println("Consulta agendada no servi�o de agendamento");
+		System.out.println("Consulta agendada no setor de agendamento");
 		view.desabilitarBotaoAssinar();
 		view.habilitarBotaoCancelar();
 		

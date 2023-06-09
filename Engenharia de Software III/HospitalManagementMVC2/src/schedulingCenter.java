@@ -1,28 +1,13 @@
-
-
-import java.util.*;
+import java.util.Timer;
+import java.util.TimerTask;
 
 public class schedulingCenter {
-
 	public static void main(String[] args) {
-		final Model model = new Model();
+		final Model model = Model.getInstance();
 		ControllerTrial controller = new ControllerTrial(model);
-		
-		
-		final Timer timer = new Timer();
-	      timer.schedule(new TimerTask() {
-	        public void run() {
-	        	model.setMeasurements("Ana Caroline", "Cardiologista", "10:10");
-	        }
-	      }, 5000);
-	      
-	      final Timer timer2 = new Timer();
-	      timer.schedule(new TimerTask() {
-	        public void run() {
-	        	model.setMeasurements("Jeniffer Cristina", "Psiquiatra", "07:50");
-	        }
-	      }, 30000);
-		
+
+		// Agendar as medições usando o método scheduleMeasurements da classe Model
+		Model.scheduleMeasurements("Ana Caroline", "Cardiologista", "10:10", 5000);
+		Model.scheduleMeasurements("Jeniffer Cristina", "Psiquiatra", "07:50", 15000);
 	}
-	  
 }
