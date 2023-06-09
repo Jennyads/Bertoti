@@ -1,6 +1,6 @@
 <h4>Diagrama de Classe para projeto de aplicacação de Design Patterns - Facade</h4>
 
-![alt text](https://github.com/Jennyads/Bertoti/blob/main/Engenharia%20de%20Software%20III/Imagens/diagrama_classe_facade.png)
+![alt text](https://github.com/Jennyads/Bertoti/blob/main/Engenharia%20de%20Software%20III/Imagens/diagrama_classe_facade2.png)
 
 
 O padrão de projeto Facade é um padrão estrutural que fornece uma interface simplificada para um conjunto complexo de classes ou subsistemas. Ele atua como uma fachada (ou frente) única que oculta a complexidade subjacente e oferece uma interface mais simples e unificada para os clientes.
