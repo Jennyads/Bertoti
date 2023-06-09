@@ -1,17 +1,26 @@
-@startuml Facade
-
 class DatabaseConnection {
-    -Connection connection;
-    -String url;
-    -String username;
-    -String password;
+    +void connect() {}
 
-    +DatabaseConnection(String url, String username, String password) 
-    
-    +Connection getConnection()
-
-    +void closeConnection() 
+    +void disconnect() {}
 }
 
+class DatabaseFacade {
+    -DatabaseConnection connection;
+    -QueryExecutor queryExecutor;
 
-@enduml
+    +DatabaseFacade() {}
+
+    +void connectAndExecuteQuery(String query) {}
+}
+
+class QueryExecutor {
+    +void executeQuery(String query) {}
+}
+
+DatabaseFacade..>QueryExecutor
+DatabaseFacade..>DatabaseConnection
+
+Client-->DatabaseFacade
+
+
+

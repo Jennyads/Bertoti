@@ -1,67 +1,124 @@
-public class Model implements Subject {
-	private static Model instance;
-	private ArrayList<Observer> observers;
-	private String nome;
-	private String especialidade;
-	private String horario;
+class ControllerTrial implements controllerInterface{
 
-	private Model() {
-		observers = new ArrayList<>();
-	}
+	View view;
+	Subject model;
+	
+	+ControllerTrial(Subject mo){}
+	
+	+void assinar(){}
+	
+	+void cancelar(){}
+	
+}
 
-	public static synchronized Model getInstance() {
-		if (instance == null) {
-			instance = new Model();
-		}
-		return instance;
-	}
+interface controllerInterface {
+	
+	+void assinar();
+	+void cancelar();
+}
 
-	public void registerObserver(Observer o) {
-		observers.add(o);
-	}
 
-	public void removeObserver(Observer o) {
-		observers.remove(o);
-	}
+class Controller implements controllerInterface{
 
-	public void notifyObservers() {
-		for (Observer observer : observers) {
-			observer.update(nome, especialidade, horario);
-		}
-	}
+	View view;
+	Subject model;
+	
+	+Controller(Subject mo){}
+	
+	+void assinar(){}
+	
+	+void cancelar(){}
+	
+}
 
-	public void measurementsChanged() {
-		notifyObservers();
-	}
+class Model implements Subject {
+	-static Model instance;
+	-ArrayList<Observer> observers;
+	-String nome;
+	-String especialidade;
+	-String horario;
+	-Model(){}
 
-	public void setMeasurements(String nome, String especialidade, String horario) {
-		this.nome = nome;
-		this.especialidade = especialidade;
-		this.horario = horario;
-		measurementsChanged();
-	}
+	+static synchronized Model getInstance() {}
 
-	public String getNome() {
-		return nome;
-	}
+	+void registerObserver(Observer o) {}
 
-	public String getEspecialidade() {
-		return especialidade;
-	}
+	+void removeObserver(Observer o) {}
 
-	public String getHorario() {
-		return horario;
-	}
+	+void notifyObservers() {}
 
-	// Método de fachada para simplificar a interação com a classe Model
-	public static void scheduleMeasurements(final String nome, final String especialidade, final String horario, long delay) {
-		Timer timer = new Timer();
-		timer.schedule(new TimerTask() {
-			public void run() {
-				Model model = Model.getInstance();
-				model.setMeasurements(nome, especialidade, horario);
-			}
-		}, delay);
-	}
+	+void measurementsChanged() {}
+
+	+void setMeasurements(String nome, String especialidade, String horario) {}
+
+	+String getNome() {}
+
+	+String getEspecialidade() {}
+
+	+String getHorario() {}
+
+	
+	+static void scheduleMeasurements(final String nome, final String especialidade, final String horario, long delay) {}
 
 }
+
+
+interface Subject {
+	+void registerObserver(Observer o);
+	+void removeObserver(Observer o);
+	+void notifyObservers();
+	+void setMeasurements(String nome, String especialidade, String horario);
+}
+
+interface Observer {
+	+void update(String nome, String especialidade, String horario);
+}
+
+class View implements ActionListener, Observer {
+	-Subject model;
+	-controllerInterface controller;
+	-String nome = "0";
+	-String especialidade = "0";
+	-String horario = "0";
+	
+	JFrame frame;
+	JPanel panelBotoes;
+	JPanel panelDados;
+	JPanel panelTemp;
+	JPanel panelPres;
+	JPanel panelHumi;
+	JLabel labelTemp;
+	JLabel labelPres;
+	JLabel labelHumi;
+	JLabel tempText;
+	JLabel presText;
+	JLabel humiText;
+	JButton assinar;
+	JButton cancelar;
+	
+	+View(Subject mo, controllerInterface co) {}
+	
+	
+	+void createView(){}
+
+	+void update(String name, String espe, String hor) {}
+
+	+display() {}
+	
+	+void habilitarBotaoAssinar(){}
+	
+	+void desabilitarBotaoAssinar(){}
+	
+	
+	+void habilitarBotaoCancelar(){}
+	
+	+void desabilitarBotaoCancelar(){}
+	
+	+void actionPerformed(ActionEvent event){}
+}
+
+
+Subject*-->Observer
+View*-->controllerInterface
+Model-->Model
+controllerInterface-->Model
